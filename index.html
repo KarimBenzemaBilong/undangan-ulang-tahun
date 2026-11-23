@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undangan Ulang Tahun</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- COVER UNDANGAN -->
+    <main class="cover">
+      <!-- Dekorasi -->
+      <div class="decoration">
+        <span class="balloon balloon-left"></span>
+        <span class="balloon balloon-right"></span>
+        <span class="star star-one">✦</span>
+        <span class="star star-two">✦</span>
+        <span class="star star-three">✧</span>
+      </div>
+
+      <!-- Konten Utama -->
+      <section class="cover-content">
+        <!-- Ikon atau Logo -->
+        <div class="crown">♕</div>
+
+        <!-- Judul Acara -->
+        <p class="subtitle">Hi friend, you’re invited to</p>
+
+        <h1>
+          My Birthday
+          <span>Party!</span>
+        </h1>
+
+        <!-- Nama Tokoh -->
+        <div class="celebration">
+          <p>Celebrating</p>
+          <h2>Karim Benzema Bilong</h2>
+        </div>
+
+        <!-- Identitas Tamu -->
+        <div class="guest-card">
+          <span class="guest-icon">✉</span>
+
+          <div class="guest-info">
+            <p>Kepada Yth.</p>
+            <h3>Nama Tamu</h3>
+          </div>
+        </div>
+
+        <!-- Tombol Buka Undangan -->
+        <a href="#informasi-acara" class="btn-open">
+          Buka Undangan
+          <span>→</span>
+        </a>
+      </section>
+
+      <!-- Dekorasi Bagian Bawah -->
+      <div class="bottom-decoration">
+        <span class="gift">🎁</span>
+        <span class="cake">🎂</span>
+      </div>
+    </main>
+
+    <!-- INFORMASI ACARA -->
+    <section class="event-section" id="informasi-acara">
+      <div class="event-container">
+        <!-- JUDUL COUNTDOWN -->
+        <div class="section-heading">
+          <span class="section-label">MENUJU HARI SPESIAL</span>
+          <h2>Hitung Mundur</h2>
+          <p>Menghitung waktu menuju hari bahagia kita!</p>
+        </div>
+
+        <!-- COUNTDOWN TIMER -->
+        <div class="countdown-container">
+          <div class="countdown-item">
+            <span id="days">00</span>
+            <p>Hari</p>
+          </div>
+
+          <div class="countdown-item">
+            <span id="hours">00</span>
+            <p>Jam</p>
+          </div>
+
+          <div class="countdown-item">
+            <span id="minutes">00</span>
+            <p>Menit</p>
+          </div>
+
+          <div class="countdown-item">
+            <span id="seconds">00</span>
+            <p>Detik</p>
+          </div>
+        </div>
+
+        <p class="countdown-status" id="countdown-status">
+          Bersiaplah untuk hari spesial!
+        </p>
+
+        <!-- INFORMASI DETAIL ACARA -->
+        <div class="event-details">
+          <div class="event-heading">
+            <h2>Informasi Acara</h2>
+          </div>
+
+          <div class="event-grid">
+            <!-- TANGGAL -->
+            <div class="event-card">
+              <div class="event-icon">📅</div>
+
+              <div class="event-info">
+                <h3>Tanggal</h3>
+                <p id="event-date">Tanggal Acara</p>
+              </div>
+            </div>
+
+            <!-- WAKTU -->
+            <div class="event-card">
+              <div class="event-icon">🕒</div>
+
+              <div class="event-info">
+                <h3>Waktu</h3>
+                <p id="event-time">Waktu Acara</p>
+              </div>
+            </div>
+
+            <!-- LOKASI -->
+            <div class="event-card">
+              <div class="event-icon">📍</div>
+
+              <div class="event-info">
+                <h3>Lokasi</h3>
+                <p id="event-location">Lokasi Acara</p>
+                <small id="event-address">Alamat Acara</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TOMBOL KALENDER -->
+        <div class="calendar-container">
+          <a
+            href="#"
+            class="btn-calendar"
+            id="google-calendar"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            📅 Simpan ke Kalender
+            <span>→</span>
+          </a>
+
+          <button class="btn-ics" id="download-ics">
+            Unduh Kalender (.ics)
+          </button>
+
+          <p>Jangan sampai melewatkan hari spesial ini!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOKASI ACARA -->
+    <section class="location-section" id="lokasi">
+      <div class="section-container">
+        <div class="section-heading">
+          <span class="section-label">TEMPAT PERAYAAN</span>
+          <h2>Lokasi Acara</h2>
+          <p>Kami tunggu kehadiranmu di tempat spesial ini!</p>
+        </div>
+
+        <div class="location-card">
+          <!-- GOOGLE MAPS -->
+          <div class="map-container">
+            <iframe
+              id="event-map"
+              title="Peta lokasi acara"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4880.284743504403!2d106.67866877586833!3d-6.237393361081455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fa31722b4af7%3A0xe3ed71478577e49!2sJl.%20Pondok%20Serut%2C%20Paku%20Jaya%2C%20Kec.%20Serpong%20Utara%2C%20Kota%20Tangerang%20Selatan%2C%20Banten%2015324!5e1!3m2!1sid!2sid!4v1795410746978!5m2!1sid!2sid"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+
+          <!-- DETAIL LOKASI -->
+          <div class="location-info">
+            <div class="info-icon">📍</div>
+
+            <h3>Detail Lokasi</h3>
+
+            <div class="location-detail">
+              <p id="location-venue">Rumah Karim</p>
+              <p id="location-address">Jl. Jaya Baung, Kelurahan Paku Jaya</p>
+            </div>
+
+            <a
+              href="https://maps.app.goo.gl/U23HLDcfKSUFxM5U9"
+              class="btn-map"
+              id="direction-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Lihat Petunjuk Arah →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AMPLOP DIGITAL -->
+    <section class="gift-section" id="amplop-digital">
+      <div class="section-container">
+        <div class="section-heading">
+          <span class="section-label">TANDA KASIH</span>
+          <h2>Amplop Digital</h2>
+          <p>
+            Kehadiran dan doa baikmu adalah hadiah terindah. Namun, apabila
+            berkenan, kamu juga dapat memberikan hadiah melalui informasi
+            berikut.
+          </p>
+        </div>
+
+        <div class="gift-container">
+          <!-- REKENING -->
+          <div class="gift-card">
+            <div class="gift-icon">💳</div>
+
+            <h3>Transfer Bank</h3>
+
+            <p class="gift-bank" id="gift-bank">Nama Bank</p>
+
+            <div class="account-number">
+              <span id="gift-account-number"> Nomor Rekening </span>
+            </div>
+
+            <p class="account-owner">
+              a.n. <strong id="gift-account-holder"> Nama Pemilik </strong>
+            </p>
+
+            <button type="button" class="btn-copy" id="copy-account">
+              Salin Nomor Rekening
+            </button>
+          </div>
+
+          <!-- ALAMAT KADO -->
+          <div class="gift-card">
+            <div class="gift-icon">🎁</div>
+
+            <h3>Kirim Hadiah</h3>
+
+            <p class="gift-description">
+              Kamu juga dapat mengirimkan hadiah ke alamat berikut.
+            </p>
+
+            <div class="gift-address" id="gift-address">
+              Alamat Penerima Kado
+            </div>
+
+            <button type="button" class="btn-copy" id="copy-gift-address">
+              Salin Alamat Kado
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOTIFIKASI TOAST -->
+    <div id="copy-toast" class="toast" role="status" aria-live="polite"></div>
+
+    <!-- GALERI FOTO -->
+    <section class="gallery-section" id="galeri">
+      <div class="gallery-container">
+        <!-- JUDUL GALERI -->
+        <div class="gallery-heading gallery-reveal">
+          <span class="gallery-label">OUR SPECIAL MOMENTS</span>
+
+          <h2>Galeri Foto</h2>
+
+          <p>Kumpulan momen spesial dan kenangan yang tak terlupakan.</p>
+        </div>
+
+        <!-- GRID GALERI -->
+        <div class="gallery-grid">
+          <!-- FOTO 1 -->
+          <figure class="gallery-item gallery-wide gallery-reveal">
+            <img
+              src="./images/momen-ultah.jpg"
+              alt="Momen foto pertama"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <figcaption>Birthday Celebration</figcaption>
+          </figure>
+
+          <!-- FOTO 2 -->
+          <figure class="gallery-item gallery-reveal">
+            <img
+              src="images/momen-ultah2.avif"
+              alt="Momen foto kedua"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <figcaption>Happy Memories</figcaption>
+          </figure>
+
+          <!-- FOTO 3 -->
+          <figure class="gallery-item gallery-reveal">
+            <img
+              src="images/momen-ultah-kue.avif"
+              alt="Momen foto ketiga"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <figcaption>Special Day</figcaption>
+          </figure>
+
+          <!-- FOTO 4 -->
+          <figure class="gallery-item gallery-wide gallery-reveal">
+            <img
+              src="images/momen-ultah4.webp"
+              alt="Momen foto keempat"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <figcaption>Unforgettable Moments</figcaption>
+          </figure>
+        </div>
+
+        <!-- PENUTUP GALERI -->
+        <div class="gallery-footer gallery-reveal">
+          <p>
+            Setiap momen memiliki cerita, dan setiap kenangan memiliki makna.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP DAN BUKU TAMU -->
+    <section class="rsvp-section" id="rsvp">
+      <div class="section-container">
+        <!-- JUDUL -->
+        <div class="section-heading">
+          <span class="section-label"> KONFIRMASI KEHADIRAN </span>
+
+          <h2>RSVP</h2>
+
+          <p>Kehadiranmu merupakan kebahagiaan tersendiri bagi kami.</p>
+        </div>
+
+        <!-- FORM RSVP -->
+        <div class="rsvp-card">
+          <form id="rsvp-form">
+            <!-- NAMA TAMU -->
+            <div class="form-group">
+              <label for="guest-name"> Nama Tamu </label>
+
+              <input
+                type="text"
+                id="guest-name"
+                placeholder="Masukkan nama kamu"
+                maxlength="60"
+                required
+              />
+            </div>
+
+            <!-- STATUS KEHADIRAN -->
+            <div class="form-group">
+              <label for="attendance"> Status Kehadiran </label>
+
+              <select id="attendance" required>
+                <option value="" disabled selected>Pilih kehadiran</option>
+
+                <option value="Hadir">Hadir</option>
+
+                <option value="Tidak Hadir">Tidak Hadir</option>
+              </select>
+            </div>
+
+            <!-- UCAPAN DAN DOA -->
+            <div class="form-group">
+              <label for="guest-message"> Ucapan / Doa </label>
+
+              <textarea
+                id="guest-message"
+                rows="4"
+                maxlength="300"
+                placeholder="Tuliskan ucapan dan doa..."
+                required
+              >
+              </textarea>
+            </div>
+
+            <!-- TOMBOL KIRIM -->
+            <button type="submit" class="btn-rsvp">Kirim Ucapan →</button>
+
+            <!-- NOTIFIKASI FORM -->
+            <p
+              id="rsvp-feedback"
+              class="rsvp-feedback"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+
+        <!-- BUKU TAMU -->
+        <div class="guestbook-section">
+          <div class="guestbook-heading">
+            <span class="section-label"> SPECIAL WISHES </span>
+
+            <h2>Buku Tamu</h2>
+
+            <p>Setiap ucapan menjadi kenangan yang berharga.</p>
+          </div>
+
+          <!-- JUMLAH UCAPAN -->
+          <div class="guestbook-counter">
+            <span id="guestbook-count">0 Ucapan</span>
+          </div>
+
+          <!-- DAFTAR UCAPAN -->
+          <div class="guestbook-list" id="guestbook-list" aria-live="polite">
+            <!-- Ucapan akan dibuat otomatis oleh JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BACKGROUND MUSIC -->
+    <audio id="background-music" loop preload="none">
+      <source src="./musics/happy-birthday.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- FLOATING MUSIC CONTROL -->
+    <button
+      type="button"
+      class="music-toggle"
+      id="music-toggle"
+      aria-label="Putar musik latar"
+      aria-pressed="false"
+      title="Putar musik"
+    >
+      <span class="music-icon" id="music-icon" aria-hidden="true"> ♫ </span>
+
+      <span id="music-label"> Putar Musik </span>
+    </button>
+
+    <!-- STATUS AUDIO -->
+    <span
+      id="music-status"
+      class="visually-hidden"
+      role="status"
+      aria-live="polite"
+    >
+    </span>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+  </body>
+</html>
